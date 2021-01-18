@@ -1,8 +1,33 @@
 > 今天总结几个非常常用的Linux命令，其中有几个在面试中很可能问相关命令的原理，比如后台运行命令。希望对大家有所帮助，最好自己去尝试在Linux操作系统中实践一下。
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OZHNkb3Vad2ljYWRBa2NiUVl3clg0NlVPSXNjUkwwWW1GY1dMalhNTFBpYlI4RWZJV0FqOTMxa1djWDF5aWNNMDNHTTN1S1BYMkhTVllRS0lQakEyalRGdy82NDA?x-oss-process=image/format,png)
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+<!-- TOC depthFrom:1 depthTo:6 orderedList:false -->
+
+- [1 查看目录以及权限](#1-查看目录以及权限)
+- [2 nohup(no hang up不要挂起的意思)](#2-nohupno-hang-up不要挂起的意思)
+- [3 查看进程](#3-查看进程)
+- [4 awk](#4-awk)
+- [5 tar解压缩](#5-tar解压缩)
+- [6 scp](#6-scp)
+- [7 死亡命令 rm -rf](#7-死亡命令-rm--rf)
+- [8 watch](#8-watch)
+- [9 df](#9-df)
+- [10 tcpdump](#10-tcpdump)
+- [11 lsof](#11-lsof)
+- [12 nc](#12-nc)
+- [13 netstat](#13-netstat)
+- [14 vmstat](#14-vmstat)
+- [15 mpstat](#15-mpstat)
+- [16 split](#16-split)
+- [17 wc -c +filename](#17-wc--c-filename)
+- [18 more/less](#18-moreless)
+- [19 head/tail](#19-headtail)
+- [20 diff](#20-diff)
+
+<!-- /TOC -->
+<div style="align: center">
+<img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OZHNkb3Vad2ljYWRBa2NiUVl3clg0NlVPSXNjUkwwWW1GY1dMalhNTFBpYlI4RWZJV0FqOTMxa1djWDF5aWNNMDNHTTN1S1BYMkhTVllRS0lQakEyalRGdy82NDA?x-oss-process=image/format,png"/>
+</div>
 
 ## 1 查看目录以及权限
 
@@ -10,15 +35,22 @@
 
 windows中的dir，如下图所示
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OZHNkb3Vad2ljYWRBa2NiUVl3clg0NlVPSXNjUkwwWW1xeTlpYUZXNnpZQUxNMWsyYjhmQWZpYngxektuUE9ta0RtMlkwanR1cEkxYUlKNmliTmliTUdtQ3B3LzY0MA?x-oss-process=image/format,png)
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+<div style="align: center">
+<img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OZHNkb3Vad2ljYWRBa2NiUVl3clg0NlVPSXNjUkwwWW1xeTlpYUZXNnpZQUxNMWsyYjhmQWZpYngxektuUE9ta0RtMlkwanR1cEkxYUlKNmliTmliTUdtQ3B3LzY0MA?x-oss-process=image/format,png"/>
+</div>
+
+
 
 > 在Linux中，通常使用ls -l列出，其中可以查看文件属性，所属用户组等较为详细的信息。下面详细解释从左到右每一列是什么意思
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OZHNkb3Vad2ljYWRBa2NiUVl3clg0NlVPSXNjUkwwWW1vUUlmUXJhNWJJc2h6Y0JEZ3o4TzFTT2xRVGhYWXI4OVR2QnI2aWI5UDdiMTk5a1dXVUVJV1hnLzY0MA?x-oss-process=image/format,png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
-ls -l
+
+<div style="align: center">
+<img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OZHNkb3Vad2ljYWRBa2NiUVl3clg0NlVPSXNjUkwwWW1vUUlmUXJhNWJJc2h6Y0JEZ3o4TzFTT2xRVGhYWXI4OVR2QnI2aWI5UDdiMTk5a1dXVUVJV1hnLzY0MA?x-oss-process=image/format,png"/>
+</div>
+
+> ls -l
 
 第一列第一个字段：文件类型，后面9个字符是模式，其中分为三组，每一组三个字段。第一组为所属用户权限。第二组为所属组的权限。第三组为其他用户所属权限。其中r(read)代表可读，w(write)代表可写，e(execute)代表可执行。在后面的9个字符中，如果是字母说明有相应的权限，如果为"-"代表没有权限。举一个例子
 
@@ -48,9 +80,6 @@ nohup command >X.file 2 >&1 &
 
 awk -F "," '{print 2}' a.csv
 
-> 获取第三列最大值
-
-awk 'BEGIN{max=0}{if(![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OZHNkb3Vad2ljYWRBa2NiUVl3clg0NlVPSXNjUkwwWW1zZ0wwM2MxeldJZTJpY1BCNHZJa2RnMWFpYmlhRlJoS1hZdDBmNW42Vm5yMmRQRXpOOXhoem1pY3ZBLzY0MA?x-oss-process=image/format,png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)3}END{print max}'
 
 ## 5 tar解压缩
 
@@ -98,11 +127,11 @@ watch -n 10 'cat /proc/loadavg'
 
 ## 9 df
 
-> 查看磁盘大小
+> 查看磁盘大小 df -h
 
-df -h
-
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OZHNkb3Vad2ljYWRBa2NiUVl3clg0NlVPSXNjUkwwWW1ZZDBQRjJLZ3R4NWQxa2J6VUgwTERTM1paYnFqOHJXRlB3b0dZQ2NzOGhsUjNBdlhac3BmencvNjQw?x-oss-process=image/format,png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+<div style="align: center">
+<img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OZHNkb3Vad2ljYWRBa2NiUVl3clg0NlVPSXNjUkwwWW1ZZDBQRjJLZ3R4NWQxa2J6VUgwTERTM1paYnFqOHJXRlB3b0dZQ2NzOGhsUjNBdlhac3BmencvNjQw?x-oss-process=image/format,png"/>
+</div>
 
 ## 10 tcpdump
 
@@ -232,7 +261,7 @@ df -h
 | 打印active状态的连接          | netstat -atnp \| grep ESTA |
 | 查看服务是否运行(npt)         | netstat -aple\| grep ntp   |
 
-# 14 vmstat
+## 14 vmstat
 
 > vmstat能够实时输出系统的进程信息，内存使用，cpu使用等资源的使用情况
 
@@ -246,9 +275,11 @@ df -h
 
 看一下vmstat都有哪些输出字段。
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OZHNkb3Vad2ljYWRBa2NiUVl3clg0NlVPSXNjUkwwWW1uZWtaOFFBZUkwOTNpY3hubFFmbU1pYnl2NGZiNzA5V3NmcTBseERRVUtvcHczY3RCOEkwNHp3QS82NDA?x-oss-process=image/format,png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
-在这里插入图片描述
+
+<div style="align: center">
+<img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OZHNkb3Vad2ljYWRBa2NiUVl3clg0NlVPSXNjUkwwWW1uZWtaOFFBZUkwOTNpY3hubFFmbU1pYnl2NGZiNzA5V3NmcTBseERRVUtvcHczY3RCOEkwNHp3QS82NDA?x-oss-process=image/format,png"/>
+</div>
 
 | 字段名 | 描述                                                         |
 | ------ | ------------------------------------------------------------ |
@@ -260,13 +291,14 @@ df -h
 
 > 这里注意哈，如果查看磁盘的更加详细信息，有另外iostat所得到的信心就更加详细哟
 
-# 15 mpstat
+## 15 mpstat
 
 > 能够实时监测多处理器系统中各个cpu的使用情况。这个命令的执行需要安装sysstat，在centos中执行yum install systat就好了。
 
-![img](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OZHNkb3Vad2ljYWRBa2NiUVl3clg0NlVPSXNjUkwwWW1ZaE5zM1BEU1hvSW1aT3JUNFhKUThRcUZmRkRkQ2liZ1VpY0dHRmVXWFhicXd3RFF3Ujd5Uk5EUS82NDA?x-oss-process=image/format,png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
-在这里插入图片描述
+
+<div style="align: center">
+<img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL21tYml6X3BuZy9OZHNkb3Vad2ljYWRBa2NiUVl3clg0NlVPSXNjUkwwWW1ZaE5zM1BEU1hvSW1aT3JUNFhKUThRcUZmRkRkQ2liZ1VpY0dHRmVXWFhicXd3RFF3Ujd5Uk5EUS82NDA?x-oss-process=image/format,png"/>
 
 然后我们看看各个字段什么意思。
 
@@ -304,3 +336,12 @@ split -5 a.txt//将a.txt每5行分割为一个文件
 
 > diff -c file1 file2 //显示两个文件的差异
 
+唠嗑
+
+为了方便大家沟通交流，资源共享。小蓝准备创建一个面试交流群，让正在面试或即将面试的小伙伴能够一起沟通交流，当然群里也会不定期的发发小红包，群里不会存在任何的广告。欢迎有兴趣的小伙伴加入。加群方式扫描下方二维码，备注加群即可
+
+
+<div style="align: center">
+<img src="https://img-blog.csdnimg.cn/20200926153826650.png#pic_center"/>
+
+**我是小蓝，一个专为大家分享面试经验的蓝人。如果觉得文章不错或者对你有点帮助，感谢分享给你的朋友，也可在给小蓝给个star，这对小蓝非常重要，谢谢你们，下期再会。**
