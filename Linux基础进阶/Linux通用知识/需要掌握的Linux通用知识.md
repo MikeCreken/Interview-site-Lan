@@ -1,9 +1,26 @@
->噗。。，这篇笔记是学习的Linux的通用知识
+>噗。。，这篇笔记是学习的Li
 
-![Linux软件安装](https://img-blog.csdnimg.cn/20201108204240137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
 
------
+<!-- TOC -->
 
+- [一 Linux通用知识](#一-linux通用知识)
+    - [1 vmvare](#1-vmvare)
+    - [2 进行网络配置](#2-进行网络配置)
+    - [3 安装xshell](#3-安装xshell)
+    - [4 基本命令的使用](#4-基本命令的使用)
+    - [5 用户管理](#5-用户管理)
+    - [6 软件的安装方法](#6-软件的安装方法)
+    - [7 shell](#7-shell)
+    - [8 awk文本处理工具](#8-awk文本处理工具)
+    - [9 进程管理与定时任务和后台执行](#9-进程管理与定时任务和后台执行)
+    - [10后台运行](#10后台运行)
+
+<!-- /TOC -->
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 
 ![Linux排查问题套路](https://img-blog.csdnimg.cn/20201108204253751.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
@@ -40,7 +57,7 @@
 
 > 那么操作系统帮助我们做了哪些事儿呢？
 
-- 跑几个问题，桌面上的图标是什么，为啥子敲一下键盘就出来了画面
+- 抛几个问题，桌面上的图标是什么，为啥子敲一下键盘就出来了画面
 - 电脑咋个知道我们鼠标点击的那个位置
 - 为什么我一回车，这些字符就飞出去了
 
@@ -1348,3 +1365,14 @@ nohup command &
 ```
 
 > 才疏学浅，难免有纰漏，如果你发现错误的地方，麻烦告诉我，我对其修正。
+
+
+唠嗑
+
+为了方便大家沟通交流，资源共享。小蓝准备创建一个面试交流群，让正在面试或即将面试的小伙伴能够一起沟通交流，当然群里也会不定期的发发小红包，群里不会存在任何的广告。欢迎有兴趣的小伙伴加入。加群方式扫描下方二维码，备注加群即可
+
+
+<div style="align: center">
+<img src="https://img-blog.csdnimg.cn/20200926153826650.png#pic_center"/>
+
+**我是小蓝，一个专为大家分享面试经验的蓝人。如果觉得文章不错或者对你有点帮助，感谢分享给你的朋友，也可在给小蓝给个star，这对小蓝非常重要，谢谢你们，下期再会。**
