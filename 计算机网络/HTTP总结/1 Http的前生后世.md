@@ -1,6 +1,27 @@
 >本文将从以下几个方面进行分享。其中包括HTTP发展史，HTTP缓存代理机制，常用的web攻击，HTTP和HTTPS的流量识别，网络协议学习的工具推荐以及高频HTTP与HTTPS的高频面试题题解等，开工。
 
-@[toc]
+<!-- TOC -->
+
+- [1 HTTP应用在哪儿](#1-http应用在哪儿)
+- [2 HTTP是什么](#2-http是什么)
+- [3 不同版本的HTTP](#3-不同版本的http)
+- [4 HTTP报文详解](#4-http报文详解)
+- [5 HTTPS](#5-https)
+- [6 HTTP特点小结](#6-http特点小结)
+- [7 HTTP识别(还原)](#7-http识别还原)
+- [8 HTTPS(密文)识别](#8-https密文识别)
+- [9 HTTP面试题测试](#9-http面试题测试)
+- [唠嗑](#唠嗑)
+
+<!-- /TOC -->
+
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+
 ![提纲](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9mMDZjNzU2NS0wZjg0LTQzNmItOGVlNy1hY2Y2ZjliN2VjMDIucG5n?x-oss-process=image/format,png)
 
 
