@@ -53,6 +53,10 @@
 - [虎牙面试之旅](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/虎牙/题解虎牙面试.md)
 - [读者虎牙字节跳动阿里云等客户端面经分享](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/读者虎牙字节跳动阿里云等客户端面经分享/读者虎牙字节跳动阿里云等客户端面经分享.md)
 - [美团面试之旅](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/sp大佬经验分享/sp大佬经验分享.md)
+- [HR常问问题](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/HR常问问题/HR常问问题.md)
+- [到底是实习还是秋招](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/到底是实习还是秋招/到底实习还是准备秋招.md)
+- [到底是实习还是秋招](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/租房指南/租房看着就够了.md)
+
 
 ## :pencil2: 后端技术
 
