@@ -21,8 +21,9 @@
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test1.png?raw=true" width="350px" /> </div><br>
 
-![提纲](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9mMDZjNzU2NS0wZjg0LTQzNmItOGVlNy1hY2Y2ZjliN2VjMDIucG5n?x-oss-process=image/format,png)
+
 
 
 >  1989年，蒂姆·伯纳斯 - 李（Tim Berners-Lee）在论文中提出可以在互联网上构建超链接文档，并提出了三点.
@@ -38,14 +39,14 @@ HTTP:传输超文本的文本传输协议
 > 学习一门知识，采用五分钟时间看看这个知识是干啥的可能会更加有目的性。HTTP可谓无处不在，这里例举出几个。
 
 
-![HTTP应用场景](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS80YjJkNGJiYy0zMjQwLTQzNWItYWE5Ny1jYzQ5MjIxNTZiMDkucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test2.png?raw=true" width="350px" /> </div><br>
 
 
 ## 2 HTTP是什么
 
 HTTP(hypertext transport protocol)翻译过来为"超文本传输协议"，文本可以理解为简单的字符文字组合，也可以理解为更为复杂的音频或者图像等。那么将这个词语拆分为三个部分。
 
-![超文本传输协议](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9kZDYwYjJjYS0zY2E2LTQwZmMtYjAyZC0wZDAxMWY5NDdlMjgucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test3.png?raw=true" width="350px" /> </div><br>
 
 
 "超文本"和"文本"相比多了一个字"超"，这样看来比文本丰富，因为它可以将多种文本/图像等进行混合，更重要的是可以从一个文本跳转到另一个文本(文本连接)。
@@ -54,7 +55,7 @@ HTTP(hypertext transport protocol)翻译过来为"超文本传输协议"，文�
 
 "协议"，无规矩不成方圆，做机密项目之前需要签署保密协议，找工作要签"三方协议"，三方协议是学校，公司，和个人组成的协议，都是为了让大家受一定的约束，违反了即有相应的惩罚。
 
-![三方协议](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9iODk2MjJjYS04MWRlLTQ2NjMtYTJiOC1kNTg3NDcxMDVmYjEucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test4.png?raw=true" width="350px" /> </div><br>
 
 
 ## 3 不同版本的HTTP
@@ -86,8 +87,7 @@ HTTP/1.0
 
 -  传输完成，断开连接。
 
-![HTTP 0.9](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS85YzZhOWYxMC05ZjMwLTQ3NGItODczMS0xNzQ4OWVhZDczYzcucG5n?x-oss-process=image/format,png)
-
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test5.png?raw=true" width="350px" /> </div><br>
 HTTP1.0
 
 随着时代的进步，仅仅文本的传输无法满足需求，更多情况需要采用图文的方式才能生动的表达出自己的观点。随着1995年开发出Apache，同时其他的多媒体等技术发展迅速，从而进一步的促使HTTP新功能的出现。HTTP1.0在1996年诞生，增加了一下几个方面：
@@ -119,8 +119,7 @@ Content-Type: text/html
 
 HTTP1.0通信过程
 
-![HTTP1.0](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS84ZDc4YmMwMy0wNTZhLTQzNGYtYTdhZS1iYmJlMjlhY2IyYmMucG5n?x-oss-process=image/format,png)
-
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test6.png?raw=true" width="350px" /> </div><br>
 
 HTTP /1.1
 
@@ -132,7 +131,7 @@ HTTP /1.1
 
 随着文件越来越大，图片等信息越来越复杂，如果每一次上传下载文件都需要建立连接断开连接的过程将增加大量的开销。为此，提出了持久连接，也就是一次TCP连接可以具有多个HTTP请求。当然持久连接是可选择的，如果考虑关闭，只需要使用Connecttion:close关闭即可。长连接如下图所示
 
-![长连接](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS81ODdiNzA2NS0xZDBhLTQwYzYtOGFiZi00YmMxN2YwYzE0NTMucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test7.png?raw=true" width="350px" /> </div><br>
 
 - 强制要求Host头
 
@@ -174,7 +173,7 @@ HTTP/2看似很完美了吧，但是Google轮子哥可不服，其他人在研�
 
 > 客户端与服务端进行交互的信息为报文。客户端为请求报文，服务端为响应报文。我们先用wireshark抓一个博客看看
 
-![报文层次结构](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS82MDM5Y2E3Mi0wMWU2LTQ4MzItOWIxYS0yNTIyNzkwNmNmMDIucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test8.png?raw=true" width="450px" /> </div><br>
 
 ```
 GET /article/12 HTTP/1.1
@@ -204,7 +203,7 @@ Content-Encoding: gzip
 
 请求报文
 
-![请求报文](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS8wZWViNzFlMy0yOTdhLTRlNTctYWRiYS01M2JlMDQ3NmI2N2IucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test9.png?raw=true" width="450px" /> </div><br>
 
 请求报文通常由三部分组成：
 
@@ -216,7 +215,7 @@ Content-Encoding: gzip
 
 1 请求方法：一共有八种方法选择，如下图所示。采用不同的方法获取不同的资源
 
-![HTTP请求方法详解](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9kOTgzNmQ5YS03MTQxLTQ1ZTYtYTk4Mi1lODQ5ODIwODAxMjMucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test10.png?raw=true" width="450px" /> </div><br>
 
 说一下非常常见的几种请求方法
 
@@ -232,12 +231,13 @@ POST/PUT：对应于GET，向服务器发送数据
 
 网络层的IP主要目的是解决路由和寻址。现在的IP地址按照"."分割，总共2的32次方大约42亿。对于计算机来说比较方便，但是对于人类来说还是不容易记忆，此时出现DNS了，他把IP地址映射为我们平时常见的"redis.org"，按照.分割域名，从左到右级别越高，最右边为"顶级域名"。如下图所示
 
-![域名体系](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS81ZWM3OTYxZS0xZWQwLTQ4YzItOGYwYS1iZGNlMDliOTZmZTkucG5n?x-oss-process=image/format,png)
 
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test11.png?raw=true" width="450px" /> </div><br>
 
 好了，现在TCP提供可靠(数据不丢失)且字节流(数据完整性)，而且也有方便我们记忆的域名，但是互联网资源千万种，也不知道访问什么(图片，文字，视频一大堆)，这个时候URI(统一资源标识符)出现了，那长啥样？
 
-![URI格式](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS80OWVlNTI4MS01NWI0LTRkNTktODY0NS1jZThlYjU1Y2Q0MjgucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test12.png?raw=true" width="450px" /> </div><br>
 
 协议名:HTTP协议，另外还有ftp等协议。告知访问资源时使用什么协议。
 
@@ -267,7 +267,7 @@ file:///E:/Demo/index/
 
 响应报文
 
-![响应报文](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9kYWJiYjI2ZC0wMWY2LTQ3ODUtYTc1ZS02ZWFiYzBiYzJkOTMucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test13.png?raw=true" width="450px" /> </div><br>
 
 状态行----服务器响应的状态
 
@@ -425,7 +425,8 @@ HTTP的body常常被分为这几种的类别
 
 使用相应的压缩方法在带宽一定的情况下确实有不错的效果，但是gzip等主要针对文件压缩效果不错，但是对视频就不行了。这个时候是不是可以使用数据结构中常用的分而治之，大化小再合并的方式呢，
 
-![文件拆分](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS80OGFmYzMwMi0zZDBmLTQ3ZDQtOTU0Yy1jMWVkNDc5OTFjN2IucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test14.png?raw=true" width="450px" /> </div><br>
 
 ok，在报文中使用"Transer-Encoding:chunked"表示，代表body部分数据是分块传输的。另外在body中存在一个content-length字段表示body的长度，两者不能共存，另外很多时候是流式数据，body中没有指明content-length，这个时候一般就是chunked传输了。
 
@@ -441,7 +442,8 @@ ok，在报文中使用"Transer-Encoding:chunked"表示，代表body部分数据
 
 我们还是看图加深印象
 
-![chunked分块](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS85ZmI0NzZkNy1iOTU2LTQ4YjUtYTNjYS0zZWY4OGFiMWFmNmUucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test15.png?raw=true" width="450px" /> </div><br>
 
 分块解决了咋们一部分问题，但是有的时候我们想截断发送怎么办呢。在HTTP中提供了使用字段“Accept - Ranges: bytes”，明确告知客户端：“我是支持范围请求的”。那么Range范围是怎样的呢，Range从0开始计算，比如Range:0-5则读取前6个字节，服务器收到了这个请求，将如何回应呢
 
@@ -462,17 +464,20 @@ ok，在报文中使用"Transer-Encoding:chunked"表示，代表body部分数据
 
 现在我们通过MIME-TYPE和Encoding-type可以知道body部分的类型，下一步将是对内容进行协商。HTTP中，请求体中使用Accept告诉服务端需要什么类型数据(我能处理哪些类型数据)，响应头中使用Content表明发送了什么类型数据，具体如下图所示
 
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS80OWI2OGU2ZC0xMzg4LTQ3YmMtOTIxZi1jYjM3MWNlZDY2N2EucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test16.png?raw=true" width="450px" /> </div><br>
 
 好了，为了各个国家民族顺利友好的沟通和明确的区分。HTTP请求头中使用"type-subtype"，注意此时分隔符是"-"。比如en-GB表示英式英语，zh-CN表示常用的汉语，那对于客户端而言，它通过Accept-Language来标记自己可以理解的自然语言，对应的服务端使用Content-Language表明实体数据使用的语言类型，如下图所示。
 
-![字符集和编码](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9mYWI1OTQyMi0wZWQ5LTRiYWMtYTAxNi1jOGUzNmU3ZTZmNTcucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test17.png?raw=true" width="450px" /> </div><br>
 
 Cookie机制
 
 >HTTP是无状态、无记忆的，Cookie机制的出现让其有记忆功能，是怎么个实现呢
 
-![Cookie](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS8zNDVkMGI1NS00NTNhLTQzNjctOTMyNy02NWRmZjBjYWQ2ZTMucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test18.png?raw=true" width="450px" /> </div><br>
 
 从上图我们可以知道Cookie是由浏览器负责存储，并不是操作系统负责，我们换个浏览器打开同样的网页，服务就认不出来了。
 
@@ -482,11 +487,13 @@ HTTP代理
 
 > 之前介绍的都是一问一答的情景，但是在大部分的情况下都会存在多台服务器进行通信服务。其中比较常见的就是在请求方与应答方中间增加一个中间代理。
 
-![代理](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS8xZGJhNWU2YS04NTE5LTQzMGUtYjA1ZS1mMmFjMDlkOWJiMTgucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test19.png?raw=true" width="450px" /> </div><br>
 
 代理作为中间位置，相对请求方为服务端，相当于后端服务端为请求方。代理常见的功能为负载均衡。在负载均衡中需要区分正向代理与反向代理，其中也就会涉及调度算法，比如轮询还是一致性哈希等。
 
-![正向代理与反向代理](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9iNzU0ZjMxMy03Y2MyLTQ4ZWItOWY5MS1kNTM1ODQ5OGFiMzAucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test20.png?raw=true" width="450px" /> </div><br>
 
 那么问题来了，代理作为隐藏身份，相当于隐藏了真实的客户端与服务端，那在是不是
 
@@ -499,7 +506,8 @@ HTTP代理
 
 安全是什么
 
-![安全四要素](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS8yYjE2OTI5MC0zM2NiLTQ1NzktOWU0Ni0zYTgzYWEwMDgzZjcucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test21.png?raw=true" width="450px" /> </div><br>
 
 机密性
 
@@ -519,15 +527,18 @@ HTTP代理
 
 HTTPS
 
-![HTTP和HTTPS](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9mMGUxMDRiMC1mNTg0LTRiMmQtYjQxZC1mNWE2Y2JhNjBkODIucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test22.png?raw=true" width="450px" /> </div><br>
 
 从上图我们知道HTTPS无非是在传输层和应用层中间加了一层TLS，正是TLS紧跟当代密码学的步伐，尽全力的保障用户的安全。老规矩，我们用wireshark看看长什么样子。
 
-![TLS](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9jNDM3YmYxYS1hMzQ2LTQzYTgtODE5NS1jMjM4MWUwZTY0ZWMucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test23.png?raw=true" width="450px" /> </div><br>
 
 可以看出在交互的过程中多了不少新东西，了解TLS,TLS由SSL握手协议，SSL修改密码规范协议，SSL警报协议，SSL记录协议组成。
 
-![TLS组成](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS83NmY2YTFjOS0wYTc0LTQzNjItODMzMi1kNmQyNjY5NDIyNWQucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test24.png?raw=true" width="450px" /> </div><br>
 
 SSL握手协议：
 
@@ -551,13 +562,15 @@ SSL握手协议：
 
 > 对称加密，顾名思义，加密方与解密方使用同一钥匙(秘钥)。具体一些就是，发送方通过使用相应的加密算法和秘钥，对将要发送的信息进行加密；对于接收方而言，使用解密算法和相同的秘钥解锁信息，从而有能力阅读信息。
 
-![对称加密](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS83MDRkZTQyYy01MjVmLTQ3N2EtODJlZC0xNGVmOGQ3NDI4NDYucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test25.png?raw=true" width="450px" /> </div><br>
 
 非对称加密
 
 > 在对称加密中，发送方与接收方使用相同的秘钥。那么在非对称加密中则是发送方与接收方使用的不同的秘钥。其主要解决的问题是防止在秘钥协商的过程中发生泄漏。比如在对称加密中，小蓝将需要发送的消息加密，然后告诉你密码是123balala,ok,对于其他人而言，很容易就能劫持到密码是123balala。那么在非对称的情况下，小蓝告诉所有人密码是123balala,对于中间人而言，拿到也没用，因为没有私钥。所以，非对称密钥其实主要解决了密钥分发的难题。如下图
 
-![非对称加密](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9mMGMzMTcwOC0yZGQ0LTQwNmUtYjJjNi0wM2YyOGViNmZjZmMucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test26.png?raw=true" width="450px" /> </div><br>
 
 
 > 其实我们经常都在使用非对称加密，比如使用多台服务器搭建大数据平台hadoop，为了方便多台机器设置免密登录，是不是就会涉及到秘钥分发。再比如搭建docker集群也会使用相关非对称加密算法。
@@ -566,7 +579,8 @@ SSL握手协议：
 
 > 非对称加密算法，大多数是从数学问题演变而来，运算速度较慢。混合加密所谓取长补短。通信过程中使用RSA等解决密钥交换问题，然后使用随机数产生的在对称算法中的会话密钥，最后使用加密。对方使用私钥解密得到的秘闻取出会话秘钥，这样就实现了密钥交换。
 
-![混合加密](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9mMzFjNzczOC0wMzQzLTQzYTgtOTU4Yy0zOGM3NzI4ZDc3NjIucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test27.png?raw=true" width="450px" /> </div><br>
 
 通过混淆加密等方式完成了机密性任务，作为Hack只需要伪造发布公钥或者作为之间人窃听密文。但是我们知道安全是四要素，还需要保证数据的完整性，身份认证等。
 
@@ -576,15 +590,18 @@ SSL握手协议：
 
 假设小A转账5000给小C，小A加上SHA-2摘要。网站计算摘要并对比，如果一致则完整可信。
 
-![摘要可信](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS8yZTUyOGFkMS01ODE2LTQ1OTAtYWJjMS1jNTc5NzUyNDQ3MzIucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test28.png?raw=true" width="450px" /> </div><br>
 
 此时小B想修改小A给的money，这个时候网站计算摘要就会发现不一样，不可信
 
-![摘要不可信](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9jOTg3OWZlZC0zZTY1LTQwYmUtYTk1ZC03ZWU4ZjU5MmI4ZmMucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test29.png?raw=true" width="450px" /> </div><br>
 
 HTTPS请求建立连接过程
 
-![HTTP握手过程](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS82NWFiYjRjNS1hZmEzLTQ5N2EtYWViMS0zYjVkYjFmMWViOTAucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test30.png?raw=true" width="450px" /> </div><br>
 
 注意：
 
@@ -597,11 +614,12 @@ HTTPS请求建立连接过程
 
 根据wireshak结果，对TLS进一步剖析。TCP三次握手建立连接，作为礼貌，Client先打招呼"Client Hello"。里面包含了Client的版本号、所支持的密码套件和随机数，如下图所示
 
-![Client Hello](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS8wMTJmNWY1ZS02M2ZjLTQ3ZDctOWNkZS02NTA4MzM1ZTAxMjAucG5n?x-oss-process=image/format,png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test31.png?raw=true" width="450px" /> </div><br>
 
 Server端表示尊重，回复"Server Hello",同时进行版本校对，给出随机数(Server Random)，从Client算法列表中选择一个密码套件，在这里选择的"TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"。
 
-![cipher Suite](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9hMGE0ZmU3OS02ZGRmLTQ4NjEtODI1My03NmMxZDIzZDM2MjIucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test32.png?raw=true" width="450px" /> </div><br>
 
 这里的"TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256"什么意思呢
 
@@ -609,17 +627,17 @@ Server端表示尊重，回复"Server Hello",同时进行版本校对，给出�
 
 双方通过证书验证身份。因为本机服务器选用了ECDHE算法，为了实现密钥交换算法，它会发送证书后把椭圆曲线的公钥（Server Params）连带"Server Key Exchange"消息发送出去。
 
-![Server Key Exchange](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9mYzA2YWRjNy1jMDdiLTQzYTktODdkOC0xZGFmYjBjYjUzMzQucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test33.png?raw=true" width="450px" /> </div><br>
 
 意思是，刚才混合加密套件比较复杂，给你个算法参数，好好记住，别弄丢了。
 
-![ServerHelloDone](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS85ZjEwYWE4OS1lMDgwLTRmMTYtOTI1Ni1mZTQwNzU4NzJkY2UucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test34.png?raw=true" width="450px" /> </div><br>
 
 随后服务端回复"hello done"告知打招呼完毕
 
 打完招呼完毕后，客户端对证书进行核实。然后根据密码套件也生成椭圆曲线的公钥，用"Client Key Exchange"消息发给服务器
 
-![Client Key Exchange](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9iZDU0NDczYS04OTFkLTQ5YTEtODk3Ny1kOWFlZWJjMzk5NjIucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test35.png?raw=true" width="450px" /> </div><br>
 
 此时客户端和服务端都有了密钥交换的两个参数(Client Params、ServerParams），然后通过 ECDHE 算法算出了一个新的值，叫“Pre-Master”
 
@@ -659,7 +677,7 @@ com 顶级域名服务器可以返回 apple.com 域名服务器的 IP 地址；
 
 > 这里说的识别，通过代码层面(libpcap封装)实现HTTP的识别，也能进一步体现TCP/IP协议栈的分层特性。先看回忆一下IP头部格式。
 
-![IP头部](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS8zMTRkNTE2Mi1mMzI4LTQ5ZjAtYjkxOS0xNzRlZWIwMGEyNTQucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test36.png?raw=true" width="450px" /> </div><br>
 
 注意头部中的协议字段，如果此字段值为0x0600则为TCP分组。当知道了是TCP分组后，是不是可以通过TCP头部中端口(80)就可以判断为HTTP呢，不能的，很多情况都会使用动态端口的方式进行部署。此时可以通过HTTP中的关键字进行判断。如果为HTTP，再通过头部字段中的"Content-type"，charset等确认文本信息，编码方式，最后采用解码算法进行还原。
 
@@ -671,16 +689,16 @@ com 顶级域名服务器可以返回 apple.com 域名服务器的 IP 地址；
 
 > 使用python的dpkt库(pip install dpkt即可)，dpkt库方便对每一层协议进行拆解，同时也能进行流的拆分以及特征的提取。下面举一个通过无头浏览的方式自动化采集流量(ps如果需要较大规模的流量采集则可以考虑使用docker集群的方式)
 
-![Read_pcap](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9jMDdkMzk5Zi1jYmQzLTQyMDAtODhjOS02NTVmY2Y5MmI2MTgucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test37.png?raw=true" width="450px" /> </div><br>
 
 - 根据所提特征生成npz(实际上是numpy提供的数组存储方式)
 - 使用开源skearn库进行模型训练并识别预测，此处假设使用SVM(仅使用默认参数)
 
-![SVM](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS9hNWU0MWJhMC0yMTUyLTQ3MGMtODI0MS05ZjliZDZmYjYxZDAucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test38.png?raw=true" width="450px" /> </div><br>
 
 - 识别结果(参数进行适度调整定会更好的效果)
 
-![识别结果](https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWdrci5jbi1iai51ZmlsZW9zLmNvbS84OTNlMzQzNS04Njk2LTRhNTEtYmExOS1kMjUzMDBhNTJhNzQucG5n?x-oss-process=image/format,png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test39.png?raw=true" width="450px" /> </div><br>
 
 ## 9 HTTP面试题测试
 
@@ -744,7 +762,8 @@ com 顶级域名服务器可以返回 apple.com 域名服务器的 IP 地址；
 
 第一篇文章能肝到这么长，也终于体会到各位大佬写文的不容易，不想被「 白嫖」，文末点个「 在看」吧，让我们一起「 看世界」。
 
-Persist
+**我是小蓝，一个专为大家分享面试经验的蓝人。如果觉得文章不错或者对你有点帮助，感谢分享给你的朋友，也可在给小蓝给个star，这对小蓝非常重要，谢谢你们，下期再会。**
 
-https://www.chainnews.com/articles/401950499827.htm
-https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%BB%9C%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E5%B7%A5%E5%85%B7/img/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1.png?raw=true" width="200px" /> </div><br>
+
