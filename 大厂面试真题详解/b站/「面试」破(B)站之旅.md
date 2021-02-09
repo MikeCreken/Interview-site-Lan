@@ -64,31 +64,30 @@ public class SpinLock {
 
 > 我们知道在调用某个函数的时候无非就是两种情况，要么**马上返回**，然后根据返回值进行接下来的业务处理。当在使用**阻塞IO**的时候，应用程序会被无情的**挂起**，等待内核完成操作，因为此时的内核可能将CPU时间切换到了其他需要的进程中，在我们的应用程序看来感觉被卡主(阻塞)了。
 
-![阻塞IO](https://img-blog.csdnimg.cn/20200919161638166.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3/b%E7%AB%99/img/test1.png?raw=true" width="450px" /> </div><br>
 
 **非阻塞IO**
 
 > 当使用非阻塞函数的时候，和阻塞IO类比，内核会立即返回，返回后获得足够的CPU时间继续做其他的事情。
 
-![非阻塞](https://img-blog.csdnimg.cn/20200919124159572.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3/b%E7%AB%99/img/test2.png?raw=true" width="450px" /> </div><br>
 
 **IO复用模型**
 
 > 当使用fgets等待标准输入的时候，如果此时套接字有数据但不能读出。IO多路复用意味着可以将标准输入、套接字等都当做IO的一路，任何一路IO有事件发生，都将通知相应的应用程序去处理相应的IO事件，在我们看来就反复**同时**可以处理多个事情。这就是**IO复用**。
 
-![IO复用](https://img-blog.csdnimg.cn/20200919141529691.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center) 
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3/b%E7%AB%99/img/test3.png?raw=true" width="450px" /> </div><br>
 
 **信号驱动IO**
 
 > 在信号驱动式 I/O 模型中，应用程序使用套接口进行信号驱动 I/O，并安装一个信号处理函数，进程继续运行并不阻塞。当数据准备好时，进程会收到一个 SIGIO 信号，可以在信号处理函数中调用 I/O 操作函数处理数据。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200920103025792.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_16,color_FFFFFF,t_70#pic_center)
-
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3/b%E7%AB%99/img/test4.png?raw=true" width="450px" /> </div><br>
 **异步IO**
 
 > 用程序告知内核启动某个操作，并让内核在整个操作（包括将数据从内核拷贝到应用程序的缓冲区）完成后通知应用程序。那么和信号驱动有啥不一样?
 
-![异步IO](https://img-blog.csdnimg.cn/2020092001431223.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3/b%E7%AB%99/img/test5.png?raw=true" width="450px" /> </div><br>
 
 - 讲讲select和epoll的区别？
 
@@ -228,7 +227,7 @@ undo log回滚日志保存了事务发生之前的数据的一个版本，可以
 
 > mixed模式即混合模式，Mysql会根据执行的每一条具体sql区分对待记录的日志形式。那么binlog的主从同步流程到底是咋样的
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200926144156913.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_16,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3/b%E7%AB%99/img/test6.png?raw=true" width="450px" /> </div><br>
 
 
 流程简述：
@@ -250,15 +249,13 @@ Master执行完增删改操作后都会记录binlog日志,当需要同步的时�
 
 > 假设使用单链表存储n个元素，其中元素有序如下图所示
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200926142742466.png#pic_center)
-
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3/b%E7%AB%99/img/test7.png?raw=true" width="450px" /> </div><br>
 
 从链表中查找一个元素，自然从头开始遍历找到需要查找的元素，此时的时间复杂度为O(n)。那采用什么方法可以提高查询的效率呢？问就是加索引，如何加，我们从这部分数据中抽取几个元素出来作为单独的一个链表，如下图所示]
 
 假设此时咋们查找元素16，首先一级索引处寻找，当找到元素14的时候，下一个节点的值为18，意味着我们寻找的数在这两个数的中间。此时直接从14节点指针下移到下面的原始链表中，继续遍历，正好下一个元素就是我们寻找的16。好了，我们小结一下，如果从原始链表中寻找元素16，需要遍历比较8次，如果通过索引链表寻找我们只需要5次即可。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020092614282172.png#pic_center)
-
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3/b%E7%AB%99/img/test8.png?raw=true" width="450px" /> </div><br>
 
 我们继续查找元素16，此时比较次数变为4次。这样看来，加一层索引查找的次数就变少，如果有n个元素到底有多少索引？
 
@@ -274,7 +271,7 @@ Master执行完增删改操作后都会记录binlog日志,当需要同步的时�
 
 先看二叉查找树，
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200926144001386.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_16,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3/b%E7%AB%99/img/test9.png?raw=true" width="450px" /> </div><br>
 
 
 这种结构会导致二叉查找树的查找效率变为 O(n),。
@@ -306,15 +303,13 @@ Master执行完增删改操作后都会记录binlog日志,当需要同步的时�
 - 对于应届生主要考察的还是计算机基础知识的掌握，项目要求没有那么高，是自己做的就使劲抠细节，做测试，只有这样，才知道会遇到什么问题，遇到什么难点，如何解决的。从而可以侃侃而谈了。
 - 非科班也不要怕，怕了你就输了！一定要多尝试。
 
-![img](https://img-blog.csdnimg.cn/img_convert/4a8774a20f0b42fa533ced2d9803b14f.png)
+<div align="center"> <img src="https://camo.githubusercontent.com/c4ca0928043409c36a5a29179303bd15edf78f2533f9ed9a9fef79e800016c29/68747470733a2f2f696d672d626c6f672e6373646e696d672e636e2f696d675f636f6e766572742f34613837373461323066306234326661353333636564326439383033623134662e706e67" width="200px" /> </div><br>
 
------
 
 唠嗑
 
-为了方便大家沟通交流，资源共享。小蓝准备创建一个面试交流群，让正在面试或即将面试的小伙伴能够一起沟通交流，当然群里也会不定期的发发小红包，群里不会存在任何的广告。欢迎有兴趣的小伙伴加入。加群方式扫描下方二维码，备注加群即可
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200926153826650.png#pic_center)
+**我是小蓝，一个专为大家分享面试经验的蓝人。如果觉得文章不错或者对你有点帮助，感谢分享给你的朋友，也可在给小蓝给个star，这对小蓝非常重要，谢谢你们，下期再会。**
 
-**我是小蓝，一个专为大家分享面试经验的蓝人。如果觉得文章不错或者对你有点帮助，感谢分享给你的朋友，也可在下方给小蓝给个在看，这对小蓝非常重要，谢谢你们，下期再会。**
 
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%BB%9C%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E5%B7%A5%E5%85%B7/img/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1.png?raw=true" width="200px" /> </div><br>
