@@ -2,6 +2,26 @@
 
 > 今天对DNS进行个总结，希望对大家有点用吧
 
+<!-- TOC -->
+
+- [1 Chrome浏览器原理](#1-chrome浏览器原理)
+- [2 DNS简介](#2-dns简介)
+- [3 DNS报文结构](#3-dns报文结构)
+- [4 DNS解析详解](#4-dns解析详解)
+- [5 DNS进阶之新玩法](#5-dns进阶之新玩法)
+- [6 DNS实战(wireshark)](#6-dns实战wireshark)
+- [7 使用IP地址访问浏览器的原理](#7-使用ip地址访问浏览器的原理)
+- [8 使用域名访问浏览器的原理](#8-使用域名访问浏览器的原理)
+- [9 DNS劫持](#9-dns劫持)
+- [10 本文涉及高频面试题(自行测试)](#10-本文涉及高频面试题自行测试)
+- [唠嗑](#唠嗑)
+
+<!-- /TOC -->
+
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+
 <div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test1.png?raw=true" width="450px" /> </div><br>
 
 
