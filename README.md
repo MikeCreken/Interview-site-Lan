@@ -2,7 +2,7 @@
 
 | 基础算法&nbsp; | 操作系统 | 计算机网络&nbsp;|数据库| &nbsp;Linux基础&nbsp;&nbsp;|&nbsp;Java&nbsp;&nbsp;|题解面经| &nbsp;&nbsp;高效工具&nbsp;&nbsp; |后端技术| &nbsp;&nbsp;后记&nbsp;&nbsp; |
 | :---: | :----: | :---: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [:pencil2:](#pencil2-算法) | [:computer:](#computer-操作系统) | [:cloud:](#cloud-网络) | [:art:](#art-面向对象) | [:floppy_disk:](#floppy_disk-数据库) |[:coffee:](#coffee-java)| [:bulb:](#bulb-系统设计) |[:wrench:](#wrench-工具)| [:watermelon:](#watermelon-编码实践) |[:memo:](#memo-后记)|
+| [:bookmark:](#pencil2-算法) | [:racehorse:](#computer-操作系统) | [:hammer:](#cloud-网络) | [:pencil2:](#art-面向对象) | [:penguin:](#floppy_disk-数据库) |[:floppy_disk:](#coffee-java)| [:key:](#bulb-系统设计) |[:pushpin:](#wrench-工具)| [:watermelon:](#watermelon-编码实践) |[:memo:](#memo-后记)|
 
 <br>
 
@@ -12,41 +12,40 @@
 
 <br>
 
-## :pencil2: 基础算法
+## :bookmark: 基础算法
 
-- [剑指 Offer 题解]()
-- [Leetcode 题解]()
-- [算法]()
+- [等待更新剑指 Offer 题解]()
+- [等待更新Leetcode 题解]()
+- [等待更新面试高频算法]()
 
-## :computer: 操作系统
-
+## :racehorse: 操作系统
 
 
 - [线程进程与协程](https://github.com/MikeCreken/Interview-site-Lan/blob/master/操作系统/线程进程协程/进程线程协程.md)
 
-## :cloud: 计算机网络 
+## :hammer: 计算机网络 
 
-- [计算机网络基础]()
+- [等待更新计算机网络基础]()
 - [HTTP](https://github.com/MikeCreken/Interview-site-Lan/blob/master/计算机网络/HTTP总结/1 Http的前生后世.md)
 - [DNS](https://github.com/MikeCreken/Interview-site-Lan/blob/master/计算机网络/DNS/DNS.md)
-- [IP详解]()
-- [TCP详解]()
-- [常见攻击技术]()
+- [等待更新IP详解]()
+- [等待更新TCP详解]()
+- [等待更新常见攻击技术]()
 
-## :floppy_disk: 数据库
+## :penguin: 数据库
 
-- [数据库基本原理]()
-- [SQL实战]()
-- [Redis基础]()
-- [高频Redis详解]()
+- [等待更新数据库基本原理]()
+- [等待更新SQL实战]()
+- [等待更新Redis基础]()
+- [等待更新高频Redis详解]()
 
-## :coffee: Linux基础
+## :floppy_disk: Linux基础
 
 - [Linux 基础](https://github.com/MikeCreken/Interview-site-Lan/blob/master/Linux基础进阶/Linux通用知识/需要掌握的Linux通用知识.md)
-- [Shell 实战](https://github.com/MikeCreken/Interview-site-Lan/blob/master/Linux基础进阶/Linux安全策略/Linux安全策略.md)
+- [Linux安全策略](https://github.com/MikeCreken/Interview-site-Lan/blob/master/Linux基础进阶/Linux安全策略/Linux安全策略.md)
 - [20个常用命令](https://github.com/MikeCreken/Interview-site-Lan/blob/master/Linux基础进阶/20个常用Linux命令/20个常用Linux命令.md)
 
-## :bulb: 题解面经 
+## :key: 题解面经 
 
 - [B站面试之旅](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/b站/「面试」破(B)站之旅.md)
 - [小红书面试之旅](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/小红书/小红书.md)
@@ -55,23 +54,23 @@
 - [读者虎牙字节跳动阿里云等客户端面经分享](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/读者虎牙字节跳动阿里云等客户端面经分享/读者虎牙字节跳动阿里云等客户端面经分享.md)
 - [美团面试之旅](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/sp大佬经验分享/sp大佬经验分享.md)
 
-## :art: 后端技术
+## :pencil2: 后端技术
 
-- [缓存原理]()
-- [集群技术]()
-- [消息队列]()
-- [Docker]()
-- [k8s]()
+- [等待更新缓存原理]()
+- [等待更新集群技术]()
+- [等待更新消息队列]()
+- [等待更新Docker]()
+- [等待更新k8s]()
 
-## :wrench: 高效工具 
+## :pushpin: 高效工具 
 
-- [Git/svn]()
-- [IDEA]()
+- [等待更新Git/svn]()
+- [等待更新IDEA]()
 
-## :watermelon: 编码实践 
+## :watermelon: 工程思维
 
-- [代码可读性]()
-- [代码风格规范]()
+- []()
+- []()
 
 ## :memo: 后记
 
@@ -95,4 +94,8 @@ Logo：[logomakr](https://logomakr.com/)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 
-
+<head> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script> 
+</head> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
