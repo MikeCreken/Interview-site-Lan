@@ -1,6 +1,10 @@
-万字长文去掉"DNS"绿帽子 阿里
 
-![提纲](https://imgkr.cn-bj.ufileos.com/fa34ff1f-964e-4f9f-9d66-4ea2436d2859.png)
+
+> 今天对DNS进行个总结，希望对大家有点用吧
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test1.png?raw=true" width="450px" /> </div><br>
+
+
 
 > 提到网络，基本上都能把DNS给扯上去。为啥呢，今天我们来一探究竟。
 
@@ -12,13 +16,13 @@
 
 我们实验看看，打开一个网页到底开了几个进程，又分别有什么作用
 
-![打开浏览器使用的 进程数](https://imgkr.cn-bj.ufileos.com/1346a73a-07b4-4d97-93d4-cdd305fbeacb.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test2.png?raw=true" width="450px" /> </div><br>
 
 从上图我们发现，打开一个网页，使用了四个进程，分别为GPU进程，Network Service进程，当前网页进程和浏览器。我们先复习进程与线程。
 
 假设现在有这样几行伪代码，我们看看应该怎么去执行，可能分为四步
 
-![示例伪代码](https://imgkr.cn-bj.ufileos.com/4d520360-71f0-485d-80de-0629a5935a93.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test3.png?raw=true" width="450px" /> </div><br>
 
 - 计算X=5+2
 - 计算y=8/4
@@ -40,23 +44,23 @@
 
 > 在Linux中使用fork创建进程，返回进程id。通过id的不同让父子进程各干其事，然后使用execvp执行具体任务
 
-![创建进程](https://imgkr.cn-bj.ufileos.com/057b0fcc-c870-4ca7-826f-aee675fe6823.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test4.png?raw=true" width="450px" /> </div><br>
 
 > 创建主函数来使用上面的函数，看看会出现什么情况
 
-![主函数](https://imgkr.cn-bj.ufileos.com/69593e87-48be-4798-8ff5-6abc9b9025a6.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test5.png?raw=true" width="450px" /> </div><br>
 
 好了，现在主函数和执行函数都写完了，但是这还只是文本文件，对于计算机而言只喜欢"01"组合，cpu执行的命令需要是二进制，所以需要进行「编译」，但是二进制也得有一定的格式，不然定会乱套，在Linux中这种格式是"ELF"Executeableand Linkable Format）。其具体的样子如下所示
 
-![文本文件到二进制](https://imgkr.cn-bj.ufileos.com/c25541c0-76bc-4a0c-9f11-a01181b863fa.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test6.png?raw=true" width="450px" /> </div><br>
 
 现在编译两个程序
 
-![编译](https://imgkr.cn-bj.ufileos.com/04408402-0982-4c8e-b02c-0c678adf8631.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test7.png?raw=true" width="450px" /> </div><br>
 
 > 在编译的过程中，第一步预处理，将头文件直接嵌入到文件正文中，将定义的相关宏展开，最终编译为.o文件(可重定文件)，那么ELF是什么样子呢
 
-![ELF头部](https://imgkr.cn-bj.ufileos.com/507f62e5-63e3-409d-a7ae-3a0b01afd126.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test8.png?raw=true" width="450px" /> </div><br>
 
 上图给大家准备了几个高频面试题目(哪些在代码段，数据段。。)
 
@@ -66,11 +70,11 @@
 
 >字面意思是可以随时放在其他位置。对的，目前我们只是编译了文件，将来会被加载到内存里面，也就是加在某一个位置。可惜现在还是.o文件(代码片段)，不具备可执行的权限，它以后想变为函数库，哪里需要就在哪里去完成任务，搬到了哪里就重新定位了位置。要让它可重用，就得成为库文件，这个文件分为静态链接库(.a)和动态链接库，它能将一系列的.o文件归档为文件。怎么创建呢
 
-![ar](https://imgkr.cn-bj.ufileos.com/d05fe28b-b8e6-4c53-b3d7-a008bbfbb950.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test9.png?raw=true" width="450px" /> </div><br>
 
 这个时候其他开发人员准备使用这个功能，加上参数连接过去就好了
 
-![](https://imgkr.cn-bj.ufileos.com/b03cad50-d9fe-4bd1-97c5-62c64e918762.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test10.png?raw=true" width="450px" /> </div><br>
 
 > 上面命令中"-L"代表默认在当前目录寻找.a文件，然后取出.o文件和creteprocess.o做连接形成二进制执行文件 staticcreateprocess。
 
@@ -78,7 +82,7 @@
 
 说的有点远了，回来回来。刚才我们说了多线程并行计算的优势，画个图对比加深印象下
 
-![单线程与多线程](https://imgkr.cn-bj.ufileos.com/ba936428-413d-4579-a893-22ca1a7af2f2.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test11.png?raw=true" width="450px" /> </div><br>
 
 ok总结下进程线程有哪些特点(面试跑不脱)
 
@@ -101,7 +105,7 @@ ok总结下进程线程有哪些特点(面试跑不脱)
 
 - 线程之间共享进程数据
 
-![线程共享数据](https://imgkr.cn-bj.ufileos.com/b4f01b22-db04-48b3-b3d6-2698a46cade1.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test12.png?raw=true" width="450px" /> </div><br>
 
 从上图我们可以知道线程1，2和线程3分别将数据写入ABC，线程2在负责处理ABC三种读取数据并显示
 
@@ -109,7 +113,7 @@ ok总结下进程线程有哪些特点(面试跑不脱)
 
 最初的浏览器单进程，意味着无论是网络，页面渲染引擎还是js环境都在一个进程中，如下图所示。
 
-![浏览器单进程](https://imgkr.cn-bj.ufileos.com/0c351844-a90e-46bd-8530-70d9c11bd90a.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test13.png?raw=true" width="450px" /> </div><br>
 
 那个时候单体结构都有什么问题？
 
@@ -163,14 +167,14 @@ GPU进程
 
 mac地址诞生，可是太不容易记忆了，出现了简化了IP形式，它被直接暴露给外网不说，还让人类还是觉得比较麻烦，干脆用几个字母算了，也就是域名了。域名不仅仅能够代替IP，还有很多其他的用途比如在web应用中用来标识虚拟主机。
 
-![](https://imgkr.cn-bj.ufileos.com/0c7d1393-e423-405d-b9f3-c73b87e9d598.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test14.png?raw=true" width="450px" /> </div><br>
 
 ## 3 DNS报文结构
 
 > 说了这么多，协议头部，到底有哪些字段，其含义是什么都还不知道，那怎么去分析报文，下面我们一起再看看报文什么样子
 
 
-![DNS报文结构](https://imgkr.cn-bj.ufileos.com/be120d3f-dc37-46f7-ab74-454806a337e4.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test15.png?raw=true" width="450px" /> </div><br>
 
 基础结构部分
 
@@ -190,7 +194,7 @@ mac地址诞生，可是太不容易记忆了，出现了简化了IP形式，它
 
 重点！！！！基础结构中的标志字段细分如下：
 
-![标志字段](https://imgkr.cn-bj.ufileos.com/172f64bf-95c9-4784-a3da-008a20b22444.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test16.png?raw=true" width="450px" /> </div><br>
 
 - QR(Response)：查询请求，值为0；响应为1
 
@@ -217,7 +221,7 @@ mac地址诞生，可是太不容易记忆了，出现了简化了IP形式，它
 - 查询名:一般为查询的域名，也可能是通过IP地址进行反向查询
 - 查询类型：查询请求的资源类型。常见的如果为A类型，表示通过域名获取IP。具体如下图所示
 
-![](https://imgkr.cn-bj.ufileos.com/1f8aceb8-fae3-4c12-a470-e9f749904e93.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test17.png?raw=true" width="450px" /> </div><br>
 
 - 查询类：地址类型，通常为互联网地址为1
 
@@ -225,7 +229,7 @@ mac地址诞生，可是太不容易记忆了，出现了简化了IP形式，它
 
 > 资源记录部分包含回答问题区域，权威名称服务器区域字段、附加信息区域字段，格式如下
 
-![资源记录部分](https://imgkr.cn-bj.ufileos.com/335ffe00-b4fe-4f08-a373-178592a7e980.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test18.png?raw=true" width="450px" /> </div><br>
 
 - 域名：所请求的域名
 - 类型：与问题部分查询类型值一直
@@ -248,7 +252,7 @@ DNS核心系统
 - 权威域名服务器(Authoritative DNS Server),管理当前域名下的IP地址，比如Tencent.com可以返回www.tencent.com的IP地址
 
 
-![核心系统](https://imgkr.cn-bj.ufileos.com/d09b45ab-87ae-4def-972b-a22aabed4a35.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test19.png?raw=true" width="450px" /> </div><br>
 
 举个例子，假设我们访问"www.google.com"
 
@@ -266,7 +270,7 @@ DNS核心系统
 
 这样依赖，相当于有了DNS服务器，操作系统的缓存和hosts文件，能就近(缓存)完成解析就好，不用每次都跑到很远的地方去解析，这样大大减轻的DNS服务器的压力。画了一个图，加深印象
 
-![DNS解析过程](https://imgkr.cn-bj.ufileos.com/4fbba87a-d978-4b3d-bcbc-04d8690f9082.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test20.png?raw=true" width="450px" /> </div><br>
 
 嗯？想必应该知道这个过程了，我们再举个例子，假设我们访问www.qq.com
 
@@ -304,7 +308,7 @@ DNS核心系统
 
 在全局负载均衡解决方案中，NS记录指向具有智能DNS解析功能的GSLB设备，通过GSLB设备进行A记录解析。为了保证高可用，如果为多地部署GSLB，则均配置记录。另外，GSLB设备还会对所在的后端服务器公网IP进行健康检查，其结果通过自有协议在不同的的GLSB设备间同步。解析的步骤如下图
 
-![智能DNS解析](https://imgkr.cn-bj.ufileos.com/be4acc61-18ec-4cc5-a324-09a9a0cead6d.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test21.png?raw=true" width="450px" /> </div><br>
 
 
 - 用户给本地DNS服务器发送查询请求，如果本地有缓存直接返回给用户，否则通过递归查询获得名服务商商处的授权DNS服务器
@@ -316,24 +320,25 @@ DNS核心系统
 
 > 使用工具为wireshark，访问www.baidu.com
 
-![](https://imgkr.cn-bj.ufileos.com/d07bbe8b-f375-432d-91be-528938117171.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test22.png?raw=true" width="450px" /> </div><br>
 
 > 分析DNS请求帧，如下图所示
 
-![DNS请求帧](https://imgkr.cn-bj.ufileos.com/99fca50c-d43c-4f0f-8f66-b65c0b5aefc1.png)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test23.png?raw=true" width="450px" /> </div><br>
 
 从上图我们可知道请求计数为1，请求的域名为dss0.bdstatic.com
 
 > 分析DNS响应帧
 
-![DNS响应](https://imgkr.cn-bj.ufileos.com/59c57a01-b87f-4daf-8baa-c6dbfe75cd20.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test24.png?raw=true" width="450px" /> </div><br>
 
 从响应头可以知道，问题计数为1，正好对应请求帧1个问题。回应了2个问题。分别为
 
-![answers](https://imgkr.cn-bj.ufileos.com/09c1d8b0-62c9-4bac-8d07-7a138d3e42b9.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test25.png?raw=true" width="450px" /> </div><br>
 
 
-![权威域名服务器](https://imgkr.cn-bj.ufileos.com/3184d5da-122e-4466-81f0-8436f4f59bd9.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test26.png?raw=true" width="450px" /> </div><br>
 
 从上图可以得出当前共有13个权威域名服务器，当然每一个的服务器地址不同，其中类型为NS代表权威域名服务器服务器
 
@@ -352,8 +357,7 @@ DNS核心系统
 ## 8 使用域名访问浏览器的原理
 
 > 这一次从浏览器角度回答，相信大家已经了解一部分浏览器知识了，我们先看看URL到网页展示的完整流程是什么样子
-
-![](https://imgkr.cn-bj.ufileos.com/42ed37fb-3e3b-44dc-82c4-68131bcebf14.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test27.png?raw=true" width="450px" /> </div><br>
 
 
 
@@ -390,14 +394,13 @@ DNS核心系统
 > 到这里我们至少知道了DNS可以将域名映射为IP，并且知道了使用了多种缓存方案来减少DNS访问的压力。那么DNS一旦出错，很可能将域名解析到其他IP地址，这样我们也就无法正确访问网页(PS是不是有的时候发现开启不了网页但是qq等可以使用，很可能就是DNS搞鬼了哟)
 
 DNS劫持方法
-
-![DNS劫持](https://imgkr.cn-bj.ufileos.com/558391b4-f8f4-4bd0-bafa-dfde16839abf.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test28.png?raw=true" width="450px" /> </div><br>
 
 - 利用DNS服务器进行DDOS攻击
 
 > 什么是DDOS，我们应该直到SYN Flood，是一种DoS(拒绝服务攻击)与DDOS(分布式拒绝服务攻击的方式),利用大量的伪造TCP请求让被攻击方资源榨干。
 
-![DDOS](https://imgkr.cn-bj.ufileos.com/001dbc40-3944-4465-af34-27ec139224f3.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DNS/images/test29.png?raw=true" width="450px" /> </div><br>
 
 我们假设攻击者已经知道了攻击者IP(如果需要了解这一部分内容，可以去搜索主动被动信息搜集/sodan等关键字)，此时攻击者使用此地址作为解析命令的源地址，当DNS请求的时候返回恰巧也是被攻击者。此时如果足够多的请求(群肉鸡)就很容易使网络崩溃。
 
@@ -466,4 +469,8 @@ http://www.360doc.com/content/18/0422/12/11935121_747766478.shtml
 
 今日的分享也就告一段落了，码字不易，不想被「白嫖」，给个star吧，让我们一起「Smile」。
 
-persist
+
+**我是小蓝，一个专为大家分享面试经验的蓝人。如果觉得文章不错或者对你有点帮助，感谢分享给你的朋友，也可在给小蓝给个star，这对小蓝非常重要，谢谢你们，下期再会。**
+
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%BB%9C%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E5%B7%A5%E5%85%B7/img/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1.png?raw=true" width="200px" /> </div><br>
