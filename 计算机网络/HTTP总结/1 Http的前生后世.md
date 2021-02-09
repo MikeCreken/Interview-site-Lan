@@ -36,17 +36,13 @@ HTTP:传输超文本的文本传输协议
 
 ## 1 HTTP应用在哪儿
 
-> 学习一门知识，采用五分钟时间看看这个知识是干啥的可能会更加有目的性。HTTP可谓无处不在，这里例举出几个。
-
-
-<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test2.png?raw=true" width="350px" /> </div><br>
-
+> 学习一门知识，采用五分钟时间看看这个知识是干啥的可能会更加有目的性。HTTP可谓无处不在，这里例举出几个，诸如web服务器，浏览器应用，CDN,WAF,爬虫等等
 
 ## 2 HTTP是什么
 
 HTTP(hypertext transport protocol)翻译过来为"超文本传输协议"，文本可以理解为简单的字符文字组合，也可以理解为更为复杂的音频或者图像等。那么将这个词语拆分为三个部分。
 
-<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test3.png?raw=true" width="350px" /> </div><br>
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test3.png?raw=true" width="450px" /> </div><br>
 
 
 "超文本"和"文本"相比多了一个字"超"，这样看来比文本丰富，因为它可以将多种文本/图像等进行混合，更重要的是可以从一个文本跳转到另一个文本(文本连接)。
@@ -55,7 +51,7 @@ HTTP(hypertext transport protocol)翻译过来为"超文本传输协议"，文�
 
 "协议"，无规矩不成方圆，做机密项目之前需要签署保密协议，找工作要签"三方协议"，三方协议是学校，公司，和个人组成的协议，都是为了让大家受一定的约束，违反了即有相应的惩罚。
 
-<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test4.png?raw=true" width="350px" /> </div><br>
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test4.png?raw=true" width="450px" /> </div><br>
 
 
 ## 3 不同版本的HTTP
@@ -87,7 +83,7 @@ HTTP/1.0
 
 -  传输完成，断开连接。
 
-<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test5.png?raw=true" width="350px" /> </div><br>
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test5.png?raw=true" width="450px" /> </div><br>
 HTTP1.0
 
 随着时代的进步，仅仅文本的传输无法满足需求，更多情况需要采用图文的方式才能生动的表达出自己的观点。随着1995年开发出Apache，同时其他的多媒体等技术发展迅速，从而进一步的促使HTTP新功能的出现。HTTP1.0在1996年诞生，增加了一下几个方面：
@@ -119,7 +115,7 @@ Content-Type: text/html
 
 HTTP1.0通信过程
 
-<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test6.png?raw=true" width="350px" /> </div><br>
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test6.png?raw=true" width="450px" /> </div><br>
 
 HTTP /1.1
 
@@ -131,7 +127,7 @@ HTTP /1.1
 
 随着文件越来越大，图片等信息越来越复杂，如果每一次上传下载文件都需要建立连接断开连接的过程将增加大量的开销。为此，提出了持久连接，也就是一次TCP连接可以具有多个HTTP请求。当然持久连接是可选择的，如果考虑关闭，只需要使用Connecttion:close关闭即可。长连接如下图所示
 
-<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test7.png?raw=true" width="350px" /> </div><br>
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP%E6%80%BB%E7%BB%93/img/images/img/test7.png?raw=true" width="450px" /> </div><br>
 
 - 强制要求Host头
 
