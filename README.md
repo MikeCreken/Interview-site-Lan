@@ -2,7 +2,7 @@
 
 | 基础算法&nbsp; | 操作系统 | 计算机网络&nbsp;|数据库| &nbsp;Linux基础&nbsp;&nbsp;|&nbsp;Java&nbsp;&nbsp;|题解面经| &nbsp;&nbsp;高效工具&nbsp;&nbsp; |后端技术| &nbsp;&nbsp;后记&nbsp;&nbsp; |
 | :---: | :----: | :---: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [:bookmark:](#bookmark-基础算法) | [:racehorse:](#racehorse-操作系统) | [:hammer:](#hammer-计算机网络) | | [:penguin:](#penguin-数据库) |[:floppy_disk:](#floppy_disk-Linux基础)| [:key:](#key-题解面经) |[:pushpin:](#pushpin-后端技术)| [:watermelon:](#watermelon-工程思维) |[:memo:](#memo-后记)|
+| [:bookmark:](#bookmark-基础算法) | [:racehorse:](#racehorse-操作系统) | [:hammer:](#hammer-计算机网络) | [:penguin:](#penguin-数据库) |[:floppy_disk:](#floppy_disk-Linux基础)| [:key:](#key-题解面经) |[:pencil2:](#pencil2-后端技术)| [:bell:​](#bell-高效工具) | [:watermelon:](#watermelon-工程思维) |[:memo:](#memo-后记)|
 
 <br>
 
@@ -92,10 +92,3 @@
 
 Logo：[logomakr](https://logomakr.com/)
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-
-<head> 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script> 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/v4-shims.js"></script> 
-</head> 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
