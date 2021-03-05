@@ -28,9 +28,13 @@
 - [等待更新计算机网络基础]()
 - [HTTP](https://github.com/MikeCreken/Interview-site-Lan/blob/master/计算机网络/HTTP总结/HTTP总结.md)
 - [DNS](https://github.com/MikeCreken/Interview-site-Lan/blob/master/计算机网络/DNS/DNS.md)
+- [一个数据包的历程](https://github.com/MikeCreken/Interview-site-Lan/blob/master/计算机网络/一个数据包的浪漫历程/数据包的翻车现场漫之旅.md)
+- [腾讯一面面试题之Timewait](https://github.com/MikeCreken/Interview-site-Lan/blob/master/计算机网络/TimeWait/腾讯面试题Timewait是什么.md)
+- [如何优雅的关闭连接](https://github.com/MikeCreken/Interview-site-Lan/blob/master/计算机网络/如何优雅的关闭连接/如何优雅的关闭连接.md)
+- [TCP常见攻击技术](https://github.com/MikeCreken/Interview-site-Lan/blob/master/计算机网络/TCP常见攻击/Tcp常见攻击.md)
 - [等待更新IP详解]()
 - [等待更新TCP详解]()
-- [等待更新常见攻击技术]()
+
 
 ## :penguin: 数据库
 
