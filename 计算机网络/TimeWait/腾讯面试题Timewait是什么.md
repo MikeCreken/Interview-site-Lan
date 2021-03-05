@@ -19,7 +19,8 @@
 
 这么多的TIME_WAIT哪里来的呢？先复习下四次挥手
 
-![四次挥手](https://static01.imgkr.com/temp/1da55578b7264156b50866890f62ac89.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TimeWait/img/test1.png?raw=true" width="450px" /> </div><br>
+
 
 [FIN_WAIT1] :FIN_WAIT1和FIN_WAIT2均为等待对方的FIN报文。两者区别为，当SOCKET在ESTABLISHED状态时，想主动关闭连接从而想对方发送FIN报文，此时进入FIN_WAIT1状态。当收到ACK报文进入FIN_WAIT2状态。
 
@@ -36,7 +37,8 @@
 
 在Linux系统中有一个字段，名称为TCP_TIME_WAIT_LEN，其数值为60s，也就是需要在TIME_WAIT阶段停留60s
 
-![](https://static01.imgkr.com/temp/d4cccc089a7243d5b70c17b187f40fcc.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TimeWait/img/test2.png?raw=true" width="450px" /> </div><br>
+
 
 
 ## 2 TIME_WAIT什么作用
@@ -66,7 +68,8 @@
 
 这里为什么是28233呢，取决于内核参数net.ipv4.ip_local_range
 
-![](https://static01.imgkr.com/temp/c47dab033bdc487aab40d3e23ba6f5f0.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TimeWait/img/test3.png?raw=true" width="450px" /> </div><br>
+
 
 
 因为端口范围是一个闭区间，所以实际可用的端口数量是：
@@ -102,7 +105,8 @@ shell> echo $((61000-32768+1)) 28233
 
 1. 只适用于连接发起方（C/S 模型中的客户端),这里为什么强调是客户端，我们看看源码；
 
-![](https://static01.imgkr.com/temp/a3277a3290f94ac4ae11a4d1f0d05020.png)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TimeWait/img/test4.png?raw=true" width="450px" /> </div><br>
+
 
 其调用路径仅仅出现在tcp_v4_connect->inet_hash_connect->__inet_check_established->twsk_unique->twsk_unique。  也就是说tcp_tw_reuse仅在TCP套接字作为客户端，调用connect时起作用。作为服务端很少主动发起链接，所以对于服务端而言不用打开此选项
 
