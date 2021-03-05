@@ -2,7 +2,10 @@
 
 ## 前言
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210227155918463.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_16,color_FFFFFF,t_70)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/tree/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test1.jpg?raw=true" width="300px" /> </div><br>
+
+
+
 
 ## 1 IP欺骗
 
@@ -17,6 +20,8 @@
 > IP头部格式
 
 ![IP头部格式](https://img-blog.csdnimg.cn/20210226125322748.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/tree/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/img/test1.jpg?raw=true" width="300px" /> </div><br>
 
 
 > IP欺骗技术
