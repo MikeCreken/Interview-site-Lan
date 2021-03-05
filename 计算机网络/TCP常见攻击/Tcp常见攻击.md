@@ -2,7 +2,7 @@
 
 ## 前言
 
-<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/tree/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test1.jpg?raw=true" width="300px" /> </div><br>
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/封面.png?raw=true" width="450px" /> </div><br>
 
 
 
@@ -19,9 +19,7 @@
 
 > IP头部格式
 
-![IP头部格式](https://img-blog.csdnimg.cn/20210226125322748.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
-
-<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/tree/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/img/test1.jpg?raw=true" width="300px" /> </div><br>
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test1.png?raw=true" width="600px" /> </div><br>
 
 
 > IP欺骗技术
@@ -50,7 +48,7 @@ IP 欺骗技术就是**伪造**某台主机的 IP 地址的技术。通过IP 地
 
 **TCP  SYN Flood** 攻击利用的是 **TCP** 的三次握手（**SYN -> SYN/ACK -> ACK**），假设连接发起方是A，连接接受方是 B，即 B 在某个端口（**Port**）上监听A发出的连接请求，过程如下图所示，左边是A，右边是B。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210226125455403.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_16,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test2.png?raw=true" width="600px" /> </div><br>
 
 
 A 首先发送 **SYN**（Synchronization）消息给 B，要求 B 做好接收数据的准备；B 收到后反馈 **SYN-ACK**（Synchronization-Acknowledgement） 消息给A，这个消息的目的有两个：
@@ -69,7 +67,7 @@ A 首先发送 **SYN**（Synchronization）消息给 B，要求 B 做好接收�
 
 假设  B 通过某 **TCP** 端口提供服务，B 在收到 A 的 **SYN** 消息时，积极的反馈了 **SYN-ACK** 消息，使连接进入**半开状态**，因为 B 不确定自己发给 A 的 **SYN-ACK** 消息或 A 反馈的 ACK 消息是否会丢在半路，所以会给每个待完成的半开连接都设一个**Timer**，如果超过时间还没有收到 A 的 **ACK** 消息，则重新发送一次 **SYN-ACK** 消息给A，直到重试超过一定次数时才会放弃。
 
-![](https://img-blog.csdnimg.cn/20210226125546776.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test3.png?raw=true" width="600px" /> </div><br>
 
 
 B 为帮助 A 能顺利连接，需要**分配内核资源**维护半开连接，那么当 B 面临海量的连接 A 时，如上图所示，**SYN Flood** 攻击就形成了。攻击方 A 可以控制肉鸡向 B 发送大量 SYN 消息但不响应 ACK 消息，或者干脆伪造 SYN 消息中的 **Source IP**，使 B 反馈的 **SYN-ACK** 消息石沉大海，导致 B 被大量注定不能完成的半开连接占据，直到资源耗尽，停止响应正常的连接请求。
@@ -98,7 +96,7 @@ B 为帮助 A 能顺利连接，需要**分配内核资源**维护半开连接�
 
 由于目标服务器利用资源检查并响应每个接收到的 **UDP** 数据包的结果，当接收到大量 **UDP** 数据包时，目标的资源可能会迅速耗尽，导致对正常流量的拒绝服务。
 
-![](https://img-blog.csdnimg.cn/20210221214851384.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test4.png?raw=true" width="600px" /> </div><br>
 
 > 如何缓解**UDP**洪水攻击？
 
@@ -155,13 +153,13 @@ $ nc 127.0.0.1 8000
 
 该命令会尝试与上面的服务建立连接，在其中一个窗口输入一些字符，就会通过 TCP 连接发送给另一个窗口并打印出来。
 
-![img](https://img-blog.csdnimg.cn/img_convert/6148980e392cfc4a772b6085125d801c.gif)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test5.gif?raw=true" width="600px" /> </div><br>
 
 > 嗅探流量
 
 编写一个攻击程序，使用 Python 网络库 `scapy` 来读取两个终端窗口之间交换的数据，并将其打印到终端上。代码比较长，下面为一部份，完整代码后台回复 TCP攻击，代码的核心是调用 `scapy` 的嗅探方法：
 
-![](https://img-blog.csdnimg.cn/20210227154939845.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test6.png?raw=true" width="600px" /> </div><br>
 
 这段代码告诉 `scapy` 在 `lo0` 网络接口上嗅探数据包，并记录所有 TCP 连接的详细信息。
 
@@ -181,7 +179,7 @@ $ nc 127.0.0.1 8000
 - 将伪造数据包的序列号设置为截获数据包的 ACK 号，因为这是发送方期望收到的下一个序列号。
 - 调用 `scapy` 的 `send` 方法，将伪造的数据包发送给截获数据包的发送方。
 
-对于我的程序而言，只需将[这一行](https://github.com/robert/how-does-a-tcp-reset-attack-work/blob/77d06123b24a0b69f5ed829bcaeb3db4aa7add8e/main.py#L116-L119)取消注释，并注释这一行的上面一行，就可以全面攻击了。按照步骤 1 的方法设置 TCP 连接，打开第三个窗口运行攻击程序，然后在 TCP 连接的其中一个终端输入一些字符串，你会发现 TCP 连接被中断了！
+对于我的程序而言，只需将这一行取消注释，并注释这一行的上面一行，就可以全面攻击了。按照步骤 1 的方法设置 TCP 连接，打开第三个窗口运行攻击程序，然后在 TCP 连接的其中一个终端输入一些字符串，你会发现 TCP 连接被中断了！
 
 > 进一步实验
 
@@ -201,7 +199,7 @@ $ nc 127.0.0.1 8000
 
 攻击中间人攻击英文名叫 Man-in-the-MiddleAttack，简称「MITM攻击」。指攻击者与通讯的两端分别创建独立的联系，并交换其所收到的数据，使通讯的两端认为他们正在通过一个私密的连接与对方 直接对话，但事实上整个会话都被攻击者完全控制。我们画一张图：
 
-![中间人](https://img-blog.csdnimg.cn/20210227150343242.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test7.png?raw=true" width="600px" /> </div><br>
 
 从这张图可以看到，中间人其实就是攻击者。通过这种原理，有很多实现的用途，比如说，你在手机上浏览不健康网站的时候，手机就会提示你，此网站可能含有病毒，是否继续访问还是做其他的操作等等。
 
@@ -241,7 +239,7 @@ $ nc 127.0.0.1 8000
 
 同样的，举个例子。Sum 和 Mike 两个人签合同。Sum 首先用 **SHA** 算法计算合同的摘要，然后用自己私钥将摘要加密，得到数字签名。Sum 将合同原文、签名，以及公钥三者都交给 Mike 
 
-![](https://img-blog.csdnimg.cn/20210221222509735.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test8.png?raw=true" width="600px" /> </div><br>
 
 
 如果 Sum 想要证明合同是 Mike 的，那么就要使用 Mike  的公钥，将这个签名解密得到摘要x，然后Mike 计算原文的sha摘要Y，随后对比x和y，如果两者相等，就认为数据没有被篡改
@@ -260,7 +258,7 @@ $ nc 127.0.0.1 8000
 
 对称加密，顾名思义，加密方与解密方使用同一钥匙(秘钥)。具体一些就是，发送方通过使用相应的加密算法和秘钥，对将要发送的信息进行加密；对于接收方而言，使用解密算法和相同的秘钥解锁信息，从而有能力阅读信息。
 
-![](https://img-blog.csdnimg.cn/20210227144142690.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test9.png?raw=true" width="600px" /> </div><br>
 
 > 常见的对称加密算法
 
@@ -268,7 +266,7 @@ $ nc 127.0.0.1 8000
 
 > DES使用的密钥表面上是64位的，然而只有其中的56位被实际用于算法，其余8位可以被用于奇偶校验，并在算法中被丢弃。因此，**DES** 的有效密钥长度为56位，通常称 **DES** 的密钥长度为56位。假设秘钥为 56 位，采用暴力破Jie的方式，其秘钥个数为2的56次方，那么每纳秒执行一次解密所需要的时间差不多1年的样子。当然，没人这么干。**DES** 现在已经不是一种安全的加密方法，主要因为它使用的56位密钥过短。
 
-![](https://img-blog.csdnimg.cn/20210227144247640.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test10.png?raw=true" width="600px" /> </div><br>
 
 - IDEA
 
@@ -284,15 +282,14 @@ $ nc 127.0.0.1 8000
 
 总结下几种
 
-![](https://img-blog.csdnimg.cn/20210227144304307.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test12.png?raw=true" width="600px" /> </div><br>
 
 > 非对称算法
 
 在对称加密中，发送方与接收方使用相同的秘钥。那么在非对称加密中则是发送方与接收方使用的不同的秘钥。其主要解决的问题是防止在秘钥协商的过程中发生泄漏。比如在对称加密中，小蓝将需要发送的消息加密，然后告诉你密码是123balala,ok,对于其他人而言，很容易就能劫持到密码是123balala。那么在非对称的情况下，小蓝告诉所有人密码是123balala,对于中间人而言，拿到也没用，因为没有私钥。所以，非对称密钥其实主要解决了密钥分发的难题。如下图
 
 
-![非对称算法](https://img-blog.csdnimg.cn/20210227144411234.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
-
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test13.png?raw=true" width="600px" /> </div><br>
 
 
 > 其实我们经常都在使用非对称加密，比如使用多台服务器搭建大数据平台hadoop，为了方便多台机器设置免密登录，是不是就会涉及到秘钥分发。再比如搭建docker集群也会使用相关非对称加密算法。
@@ -313,7 +310,7 @@ $ nc 127.0.0.1 8000
 
 三种对比
 
-![](https://img-blog.csdnimg.cn/20210227144428612.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test14.png?raw=true" width="600px" /> </div><br>
 
 > 散列算法
 
@@ -335,7 +332,7 @@ $ nc 127.0.0.1 8000
 
 总结
 
-![](https://img-blog.csdnimg.cn/20210227144452379.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70#pic_center)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test15.png?raw=true" width="600px" /> </div><br>
 
 
 
@@ -347,7 +344,7 @@ $ nc 127.0.0.1 8000
 
 证书之所以会有信用，是因为证书的签发方拥有信用。所以如果 Sum 想让 Mike 承认自己的公钥，Sum 不会直接将公钥给 Mike ，而是提供由第三方机构，含有公钥的证书。如果 Mike 也信任这个机构，法律都认可，那ik，信任关系成立
 
-![](https://img-blog.csdnimg.cn/20210221222509749.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test16.png?raw=true" width="600px" /> </div><br>
 
 如上图所示，Sum 将自己的申请提交给机构，产生证书的原文。机构用自己的私钥签名 Sum 的申请原文（先根据原文内容计算摘要，再用私钥加密），得到带有签名信息的证书。Mike 拿到带签名信息的证书，通过第三方机构的公钥进行解密，获得 Sum 证书的摘要、证书的原文。有了 Sum 证书的摘要和原文，Mike 就可以进行验签。验签通过，Mike 就可以确认 Sum 的证书的确是第三方机构签发的。
 
@@ -355,7 +352,7 @@ $ nc 127.0.0.1 8000
 
 为了让这个信任条更加稳固，就需要环环相扣，打造更长的信任链，避免单点信任风险
 
-![](https://img-blog.csdnimg.cn/20210221222509711.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test17.png?raw=true" width="600px" /> </div><br>
 
 上图中，由信誉最好的根证书机构提供根证书，然后根证书机构去签发二级机构的证书；二级机构去签发三级机构的证书；最后有由三级机构去签发 Sum 证书。
 
@@ -372,7 +369,7 @@ $ nc 127.0.0.1 8000
 
 既然知道了中间人攻击的原理也知道了他的危险，现在我们看看如何避免。相信我们都遇到过下面这种状况：
 
-![](https://img-blog.csdnimg.cn/20210227145644254.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_1,color_FFFFFF,t_70)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP%E5%B8%B8%E8%A7%81%E6%94%BB%E5%87%BB/img/test18.png?raw=true" width="600px" /> </div><br>
 
 出现这个界面的很多情况下，都是遇到了中间人攻击的现象，需要对安全证书进行及时地监测。而且大名鼎鼎的github网站，也曾遭遇过中间人攻击：
 
