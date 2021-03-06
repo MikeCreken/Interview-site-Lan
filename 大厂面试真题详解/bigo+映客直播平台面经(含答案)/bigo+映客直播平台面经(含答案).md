@@ -4,7 +4,24 @@
 
 >两个公司岗位都是后台开发工程师，公司共同点都是直播，视频相关，其面试中问到的题目为常见题目，所以不要怕。bigo四面为电话+视频。映客直播一共三面，但是必须现场笔试，如果通过一面第二天当场面试，嘻嘻，说实话，小姐姐的确多！
 
-@[toc]
+<!-- TOC -->
+
+- [一 Bigo面试](#一-bigo面试)
+    - [1 一面(视频面40分钟)](#1-一面视频面40分钟)
+    - [2  二面(视频面40分钟)](#2--二面视频面40分钟)
+- [二 映客直播面试](#二-映客直播面试)
+    - [1 笔试](#1-笔试)
+    - [2 一面(35分钟)](#2-一面35分钟)
+    - [3 二面](#3-二面)
+    - [4 总结](#4-总结)
+
+<!-- /TOC -->
+
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+
+
 # 一 Bigo面试
 
 >一面，二面，三面间隔时间比较长，问题直戳中心(感觉蛮厉害)，每轮都有算法！
@@ -39,7 +56,9 @@
 
 -  说说tcp三次握手/四次挥手，加上相关的状态
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200227195933644.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_16,color_FFFFFF,t_70)
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3/bigo%2B%E6%98%A0%E5%AE%A2%E7%9B%B4%E6%92%AD%E5%B9%B3%E5%8F%B0%E9%9D%A2%E7%BB%8F(%E5%90%AB%E7%AD%94%E6%A1%88)/img/tcp转换图.jpg?raw=true" width="650px" /> </div><br>
+
 
 >可以考虑从一次完整的会话来回答，这样思路会更加的清晰。
 
@@ -67,11 +86,17 @@
 
 - 编程题1 反转链表
 
-![c++版本](https://img-blog.csdnimg.cn/20200227201837585.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_16,color_FFFFFF,t_70)
 
-![java版本](https://img-blog.csdnimg.cn/20200227201809698.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_16,color_FFFFFF,t_70)
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3/bigo%2B%E6%98%A0%E5%AE%A2%E7%9B%B4%E6%92%AD%E5%B9%B3%E5%8F%B0%E9%9D%A2%E7%BB%8F(%E5%90%AB%E7%AD%94%E6%A1%88)/img/test1.png?raw=true" width="650px" /> </div><br>
 
-![python版本](https://img-blog.csdnimg.cn/20200227201858381.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0wxNTUxOTU0MzgzNw==,size_16,color_FFFFFF,t_70)
+
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3/bigo%2B%E6%98%A0%E5%AE%A2%E7%9B%B4%E6%92%AD%E5%B9%B3%E5%8F%B0%E9%9D%A2%E7%BB%8F(%E5%90%AB%E7%AD%94%E6%A1%88)/img/test2.png?raw=true" width="650px" /> </div><br>
+
+
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E5%A4%A7%E5%8E%82%E9%9D%A2%E8%AF%95%E7%9C%9F%E9%A2%98%E8%AF%A6%E8%A7%A3/bigo%2B%E6%98%A0%E5%AE%A2%E7%9B%B4%E6%92%AD%E5%B9%B3%E5%8F%B0%E9%9D%A2%E7%BB%8F(%E5%90%AB%E7%AD%94%E6%A1%88)/img/test3.png?raw=true" width="650px" /> </div><br>
+
 - 编程题2 最大子序和
 
 - 还有什么可以问我的吗？
@@ -247,3 +272,8 @@
 - 珍惜每一次面试机会并学会复盘.
 - 对于应届生主要考察的还是计算机基础知识的掌握，项目要求没有那么高，是自己做的就使劲抠细节，做测试，这样你就知道会遇到什么问题，遇到什么难点，如何解决的。当被问到的时候就可以侃侃而谈了。
 - 非科班也不要怕，怕了你就输了！一定要多尝试。
+
+**我是小蓝，一个专为大家分享面试经验的蓝人。如果觉得文章不错或者对你有点帮助，感谢分享给你的朋友，也可在给小蓝给个star，这对小蓝非常重要，谢谢你们，下期再会。**
+
+
+<div align="center"> <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%BB%9C%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E5%B7%A5%E5%85%B7/img/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1.png?raw=true" width="200px" /> </div><br>
