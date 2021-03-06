@@ -32,6 +32,7 @@
 - [腾讯一面面试题之Timewait](https://github.com/MikeCreken/Interview-site-Lan/blob/master/计算机网络/TimeWait/腾讯面试题Timewait是什么.md)
 - [如何优雅的关闭连接](https://github.com/MikeCreken/Interview-site-Lan/blob/master/计算机网络/如何优雅的关闭连接/如何优雅的关闭连接.md)
 - [TCP常见攻击技术](https://github.com/MikeCreken/Interview-site-Lan/blob/master/计算机网络/TCP常见攻击/Tcp常见攻击.md)
+- [30图告诉你IO多路复用](https://github.com/MikeCreken/Interview-site-Lan/blob/master/计算机网络/IO多路复用/30图告诉你什么是IO复用.md)
 - [等待更新IP详解]()
 - [等待更新TCP详解]()
 
@@ -58,7 +59,11 @@
 - [读者虎牙字节跳动阿里云等客户端面经分享](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/读者虎牙字节跳动阿里云等客户端面经分享/读者虎牙字节跳动阿里云等客户端面经分享.md)
 - [美团面试之旅](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/sp大佬经验分享/sp大佬经验分享.md)
 - [HR常问问题](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/HR常问问题/HR常问问题.md)
+- [笔试注意事项](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/笔试注意事项/笔试注意事项.md)
 - [到底是实习还是秋招](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/到底是实习还是秋招/到底实习还是准备秋招.md)
+- [双非本科的大厂暑假实习之旅(2021)](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/双非本科的大厂暑假实习之旅(2021)/双非本科的大厂暑假实习之旅(2021).md)
+- [互联网+国企的一篇非科班的面经](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/国企+互联网非科班读者的分享/互联网+国企的一篇非科班的面经.md)
+- [招银网络科技](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/招银/招银.md)
 - [租房指南](https://github.com/MikeCreken/Interview-site-Lan/blob/master/大厂面试真题详解/租房指南/租房看着就够了.md)
 
 
