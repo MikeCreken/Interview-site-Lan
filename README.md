@@ -7,7 +7,7 @@
 <br>
 
 <div align="center">
-    <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%BB%9C%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E5%B7%A5%E5%85%B7/img/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1.png?raw=true" width="200px">
+    <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E4%B8%AA%E4%BA%BA%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F.jpg?raw=true" width="400px">
 </div>
 
 <br>
