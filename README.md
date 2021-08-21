@@ -2,7 +2,7 @@
 
 | 基础算法&nbsp; | 操作系统 | 计算机网络&nbsp;|数据库| &nbsp;Linux基础&nbsp;&nbsp;|&nbsp;题解面经&nbsp;&nbsp;|后端技术| &nbsp;&nbsp;高效工具&nbsp;&nbsp; |开源项目| &nbsp;&nbsp;后记&nbsp;&nbsp; |
 | :---: | :----: | :---: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [:bookmark:](#bookmark-基础算法) | [:racehorse:](#racehorse-操作系统) | [:hammer:](#hammer-计算机网络) | [:penguin:](#penguin-数据库) |[:floppy_disk:](#floppy_disk-Linux基础)| [:key:](#key-题解面经) |[:pencil2:](#pencil2-后端技术)| [:bell:​](#bell-高效工具) | [:watermelon:](#watermelon-工程思维) |[:memo:](#memo-后记)|
+| [:bookmark:](#bookmark-基础算法) | [:racehorse:](#racehorse-操作系统) | [:hammer:](#hammer-计算机网络) | [:penguin:](#penguin-数据库) |[:floppy_disk:](#floppy_disk-Linux基础)| [:key:](#key-题解面经) |[:pencil2:](#pencil2-后端技术)| [:bell:​](#bell-高效工具) | [:watermelon:](#watermelon-最稳学习路线) |[:memo:](#memo-后记)|
 
 <br>
 
@@ -17,6 +17,10 @@
 - [等待更新剑指 Offer 题解]()
 - [等待更新Leetcode 题解]()
 - [等待更新面试高频算法]()
+
+## :watermelon: 最稳学习路线
+
+- [C++学习路线](https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E6%9C%80%E7%A8%B3%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/C%2B%2B%E6%9C%80%E7%A8%B3%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E5%85%AC%E5%BC%80.md)
 
 ## :racehorse: 操作系统
 
