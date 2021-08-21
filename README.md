@@ -6,8 +6,12 @@
 
 <br>
 
+<div align="center" color = "blue">
+    <p>为了大家方便学习和资源的共享，就建立了群，如需要麻烦加我的时候备注"github",谢谢。对了，给我 Star 的必上岸呀。</p>
+</div>
+
 <div align="center">
-    <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E4%B8%AA%E4%BA%BA%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F.jpg?raw=true" width="400px">
+    <img src="https://github.com/MikeCreken/Interview-site-Lan/blob/master/%E4%B8%AA%E4%BA%BA%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F.jpg?raw=true" width="200px">
 </div>
 
 <br>
